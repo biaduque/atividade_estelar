@@ -1,0 +1,309 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background: #f5f5f5;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 19px;
+  color: #4e4e4ebb;
+  padding: 0 25px;
+}
+
+h3 {
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  background-color: transparent !important;
+}
+
+/* .navbar-nav {
+  margin-left: 88%;
+}
+
+.navbar-brand {
+  margin-left: 8em;
+} */
+
+/* LAYOUT CAIXAS */
+
+.container {
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-right {
+  margin-left: 35px;
+}
+
+/* caixas */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(0px);
+  /* margin-left: 35px; */
+  height: 75vh;
+  width: 28vw;
+  /* background: #94dad4; */
+  background: linear-gradient(
+    135deg,
+    rgba(148, 218, 212, 1) 0%,
+    rgba(148, 218, 212, 1) 53%,
+    rgba(186, 244, 239, 1) 100%
+  );
+  animation: spawn 2.3s cubic-bezier(0.83, 0, 0.17, 1);
+  animation-delay: -0.5s;
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  height: 37.25vh;
+}
+
+.block1 {
+  display: flex;
+  justify-content: space-between;
+  height: 35vh;
+  background-color: #efdbd8;
+  width: 58vw;
+  animation: spawn 2.3s cubic-bezier(0.83, 0, 0.17, 1);
+  animation-delay: -0.4s;
+}
+
+.block1 h3 {
+  padding-top: 10px;
+}
+.block1 p{
+  font-size: 15px;
+}
+.block2 p {
+  font-size: 15px;
+}
+.block2,
+.block3 {
+  width: 28.2vw;
+}
+
+.block2 {
+  background-color: #ffc9b8;
+  animation: spawn 2.3s cubic-bezier(0.83, 0, 0.17, 1);
+  animation-delay: -0.3s;
+}
+
+.block3 {
+  background-color: #ebe8e8;
+  animation: spawn 2.3s cubic-bezier(0.83, 0, 0.17, 1);
+  animation-delay: -0.2s;
+}
+
+.logo {
+  width: 45%;
+}
+
+.svg {
+  height: 230px;
+  width: 70%;
+  opacity: 0.9;
+}
+
+.bttn {
+  display: inline-block;
+  width: fit-content;
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 25px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 5px 4px 18px 4px rgba(0, 0, 0, 0.2);
+  color: #94dad4;
+  z-index: 1;
+  transition: transform 0.2s ease-in-out;
+}
+
+.bttn:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+  z-index: 1;
+  color: #94dad4;
+}
+
+@keyframes spawn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.articles {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  border-radius: 5px;
+  width: fit-content;
+  text-align: center;
+  box-shadow: 7px 7px 49px -6px rgba(0, 0, 0, 0.17);
+  transition: all 0.2s ease-in-out;
+}
+
+.card_header {
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(
+    135deg,
+    rgba(69, 104, 220, 1) 0%,
+    rgba(176, 106, 179, 1) 100%
+  );
+}
+
+.card_body {
+  margin-bottom: 35px;
+  color: #227093;
+}
+
+.card_body p {
+  margin-top: 15px;
+  width: 402px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-bottom a {
+  border-radius: 0px 0px 5px 5px;
+  padding: 15px 0;
+  display: block;
+  color: white;
+  background-color: #ff6b6b;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-bottom a:hover {
+  background-color: #ee5253;
+}
+
+img {
+  border-radius: 5px 5px 0px 0px;
+  width: 290px;
+  object-fit: cover;
+}
+
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 17vh;
+  margin-top: 65px;
+  background-color: #262626;
+}
+
+.tm p {
+  padding: 0;
+}
+
+i {
+  font-size: 26px;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.contact ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact ul {
+  padding: 0;
+}
+
+.contact ul li:not(:first-child) {
+  margin-left: 35px;
+}
+
+li a {
+  color: white;
+  transition: all 0.2s ease-in;
+}
+
+li a:hover {
+  color: #cecece;
+}
+
+.tm p {
+  color: white;
+}
+
+h5 {
+  color: black;
+}
+
+.titles {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.gramas {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.gramas h2,
+.titles h2 {
+  color: #227093;
+}
+
+.gramas p,
+.titles p {
+  margin-bottom: 55px;
+}
+
+.gramas-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.gramas-img img {
+  border-radius: 15px;
+  width: 400px;
+  height: 400px;
+}
